@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This portfolio's purpose is to showcase my skills/talents to potential employers. 
+This portfolio's purpose is to showcase my skills/talents to potential employers.
 This portfolio will show deployed projects, created by myself.
 
 ## Built With
