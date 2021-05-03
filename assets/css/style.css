@@ -20,17 +20,20 @@ header {
   background-color: var(--secodary-color);
   color: var(--tertiary-color);
   font-family: cursive;
-  padding-bottom: 5px;
+  padding: 20px 10px 20px 0;
   border: 5px solid #DE1D87;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header h1 {
   font-weight: bolder;
   font-size: 50px;
-  background-color: gray;
+  background-color: var(--primary-color);
   margin-right: 75%;
   text-align: center;
   display: inline;
+  padding: 2px 0 0 10px;
 }
 
 .profile-img {
@@ -41,13 +44,14 @@ header h1 {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
 }
 
 header nav ul li {
   display: inline;
+  text-align: center;
 }
 
 header nav ul li a {
@@ -59,6 +63,11 @@ header nav ul li a {
 h2 {
   color: var(--tertiary-color);
   font-size: 45px;
+  margin-right: 80%;
+  border-right: 5px dashed;
+  border-color: var(--secodary-color);
+  display: block;
+  padding: 0 1px 0 0;
   
 }
 
@@ -66,8 +75,21 @@ h3 {
   font-size: 20px;
 }
 
+.my-work-section{
+  background-color: gray;
+}
+
 .my-work-section h4 {
   font-size: 15px;
+}
+
+.about-me-section{
+  display: inline-flex;
+  background-color: gray;
+}
+
+.about-me div {
+  display: inline;
 }
 .about-me-section p {
   background-color: var(--primary-color);
@@ -75,9 +97,15 @@ h3 {
   font-family: sans-serif;
   line-height: 1.5;
   width: 80%;
+  padding: 10px 8px;
+  margin: 0 310px;
 }
 
+
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: unset;
   background-color: var(--secodary-color);
   color: var(--tertiary-color);
 }
@@ -88,7 +116,114 @@ footer a {
 section {
   padding: 80px;
 }
-/* Old CSS CODE!!! */
 
+.access-img h4 {
+  text-align: center;
+}
 
+.access-img {
+  background-image: url("../images/accessibility.png\ \(4\).jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment:inherit ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items:flex-start ;
+}
 
+.runbuddy-img {
+  background-image: url("../images/RunBuddyScrnSht\ \(2\).jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment:inherit ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.calendar-img {
+  background-image: url("../images/calendar.jfif");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment:inherit ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.record-img {
+  background-image: url("../images/record.png");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment:inherit ;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contact-me {
+  background-color: gray;
+}
+
+.contact-me-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-me-options h4, .contact-me-options p {
+  line-height: 1.5;
+  justify-content:right;
+  align-items: center;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: flex;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+}
