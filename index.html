@@ -31,27 +31,16 @@
           </button>
           <div class="dropdown-content">
             <a href="#group-collab">Group Collaborations</a>
-            <a href="">Personal Projects</a>
+            <a href="#personal-projects">Personal Projects</a>
           </div>
           
           <button class="dropBtn">
             <a href="#contact-me">Contact Me</a>
           </button>
           <div class="dropdown-content">
-            <a href=""></a>
-            <a href="">Personal Projects</a>
-          </div>
-        </div>
-
-        <div>
-          <a href="#contact-me">Contact Me</a>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">Email</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="#email">Email</a>
+            <a href="#linked-in">LinkedIn</a>
+            <a href="#github">GitHub</a>
           </div>
         </div>
       </nav>
@@ -66,7 +55,7 @@
           Hello! My name is Alia Collier and welcome to my portfolio! 
           I am currently 24 years old, and I am a native of Tennessee. 
           While I may be a beginner in the coding world, I am enthusiastic about learning more to become a great developer. 
-          I am tenacious in my efforts to not only learn but also practice and master the ins and outs of programming. 
+          I am tenacious in my efforts to not only learn but also practice and master the ins and outs of front/back-end programming. 
           This tenacious grit is what not only drives me, but also, allows me to be a competitive force in a developer’s field.
         </p>
       </div>
@@ -85,34 +74,35 @@
       <!-- Group Collab Div -->
       <div>
         <h3 id="group-collab">Group Collaborations</h3>
-
-        <h3 id ></h3>
       </div>
+
       <div>
-        <article class="freesound-img">
-          <!-- place project image here-->
+        <article>
           <img src="./assets/images/Freesound-Notepad-Screenshot.jpg" alt="Image of Freesound Notepad website"/>
           <div>
-            <h3><a href="https://github.com/aliacollier/Freesound-Notepad">Freesound Notepad</h3>
+            <h4>
+              <a href="https://aliacollier.github.io/Freesound-Notepad/">Freesound Notepad
+            </h4>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>JS</li>
+              <li>Skeleton CSS (framework)</li>
+              <li>Freesound (API)</li>
+              <li>Pexel Images (API)</li>
             </ul>
           </div>
         </article>
       </div>
 
-      <div class="">
-        <h2>My Personal Workbook</h2>
+      <div>
+        <h3 id="personal-projects">My Personal Workbook</h3>
       </div>
 
       <!-- Personal Projects -->
       <div>
         <article class="access-img">
+          <img src="./assets/images/accessibilityScrnShot.jpg" alt="screenshot of Accessibility Standards website"/>
           <div>
             <h4>
               <a href="https://aliacollier.github.io/accessibility-standards-html/">Accessiblilty Standards</a>
@@ -126,10 +116,11 @@
         </article><br/>
 
         <article class="runbuddy-img">
+          <img src="./assets/images/RunBuddyScreenShot.jpg" alt="screenshot of Run Buddy Mock Website"/>
           <div>
-            <h4>
+            <h5>
               <a href="https://aliacollier.github.io/run-buddy/">Run Buddy</a>
-            </h4>
+            </h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -139,7 +130,7 @@
 
         <article class="calendar-img">
           <div>
-            <h4>Robot Gladiators</h4>
+            <h5>Robot Gladiators</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -151,7 +142,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Random Password Generator</h4>
+            <h5>Random Password Generator</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -163,7 +154,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Mod 4 Proj</h4>
+            <h5>Mod 4 Proj</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -175,7 +166,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Coding Quiz</h4>
+            <h5>Coding Quiz</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -187,7 +178,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Mod 5 Proj</h4>
+            <h5>Mod 5 Proj</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -199,7 +190,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Calendar App</h4>
+            <h5>Calendar App</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -211,7 +202,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Mod 6 Proj</h4>
+            <h5>Mod 6 Proj</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -223,7 +214,7 @@
         <article class="record-img">
           <!-- place prjocet image here-->
           <div>
-            <h4>Weather App</h4>
+            <h5>Weather App</h5>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -236,28 +227,31 @@
     
     <!-- Contact Me -->
     <section id="contact-me" class="contact-me">
-      <div class="">
+      <div>
         <h2>Contact Me</h2>
-        <p>If there are any questions about the applications for this site or any general questions, please contact me!</p>
-      </div><br/>
-
+        
       <div class="contact-me-options">
         <div>
-          <h4>Number</h4>
-          <p>123.456.7890</p>
-        </div><br/>
-
-        <div>
-          <h4>Email</h4>
+          <h3 id="email">Email</h3>
           <p>email@gmail.com</p>
         </div><br/>
 
         <div>
-          <h4>GitHub</h4>
+          <h3 id="linked-in">Linked-In</h3>
+          <p>@ Alia Collier</p>
+        </div><br/>
+
+
+        <div>
+          <h3 id="github">GitHub</h3>
           <p>
             <a href="https://github.com/aliacollier">Alia Collier GitHub</a>
           </p>
         </div><br/>
+
+        <p>For questions about the applications deployed on this site or any general questions, please contact me!</p>
+      </div><br/>
+
       </div>
     </section>
 
